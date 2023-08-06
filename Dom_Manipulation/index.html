@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <button id="changeContentBtn">Change Content</button>
+    <div id="contentDiv">Initial content</div>
+    
+    <script>
+        let changeContentBtn = document.getElementById('changeContentBtn');
+        let contentDiv = document.getElementById('contentDiv');
+
+        let messages = [
+            'Hello, World!',
+            'This is Dom Manipulation',
+            'Image: <img src="/pexels-ron-rov-17216606.jpg" alt="">'
+        ];
+        function changeContent() {
+            let randomIndex = Math.floor(Math.random() * messages.length);
+            contentDiv.innerHTML = messages [randomIndex];
+        }
+
+        changeContentBtn.addEventListener('click', changeContent);
+
+
+    </script>
+    
+</body>
+</html>

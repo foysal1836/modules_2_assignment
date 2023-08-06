@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+<body>
+     <img id="image" src="/pexels-fandy-much-15746978.jpg" alt="" >
+     <br>
+     <button id="btnImage1">Image 1</button>
+    <button id="btnImage2">Image 2</button>
+    <script>
+        let imageElement = document.getElementById("image");
+        let btnImage1 = document.getElementById('btnImage1');
+        let btnImage2 = document.getElementById('btnImage2')
+
+        btnImage1.addEventListener("click", () =>{
+            imageElement.src="/pexels-fandy-much-15746978.jpg";
+        });
+
+        btnImage2.addEventListener("click", () =>{
+            imageElement.src="/pexels-ron-rov-17216606.jpg" ;
+        })
+    </script>
+   
+    
+</body>
+</html>
